@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Cluster</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script type="text/javascript">
+       function secand() {
+           location.href = "index.html";
+       }
+</script>
+
+</head>
+<body>
+
+<div class="jumbotron text-center">
+  <h1>CLUSTER FORMAT</h1>
+  <p>Select to Start: </p>
+
+<div class="container">	
+	<fieldset>
+	<div class="form-group">
+
+		<form class="form-horizontal" action="http://192.168.43.13/cgi-bin/cluster1.py">
+
+			<div class="form-group">
+			      <label class="control-label col-sm-offset-3 col-sm-2" for="email">file Name:</label>
+				      <div class="col-sm-3">
+       					 <input type="text" class="form-control" name="file" id="email" placeholder="Enter Name: ">
+				      </div>
+			</div>
+			
+
+			<div class="form-group">
+			      <label class="control-label col-sm-offset-4 col-sm-1" for="email">Name:</label>
+				      <div class="col-sm-3">
+       					 <input type="text" class="form-control" name="VM" id="email" placeholder="Enter Name: ">
+				      </div>
+					<div class="col-sm-offset-4 col-sm-4">
+       					 <button type="submit" class="form-control" id="button" value="Create VM">Create VM</button>
+				      </div>
+			</div>
+
+		</form>		
+		
+		<form class="form-horizontal" action="http://192.168.43.13/cgi-bin/cluster1.py">
+
+			<div class="col-sm-12">
+       				<div class="checkbox">
+          				<label><input type="checkbox" name="nn12" value="nn"> Namenode</label>
+        			</div>
+				<div class="checkbox">
+          				<label><input type="checkbox" name="dn1" value="dn1"> Datanode-1</label>
+        			</div>
+				<div class="checkbox">
+          				<label><input type="checkbox" name="dn2" value="dn2"> Datanode-2</label>
+        			</div>
+				<div class="checkbox">
+          				<label><input type="checkbox" name="dn3" value="dn3"> Datanode-3</label>
+        			</div>
+      			</div>
+			<div class="form-group">        
+			      <div class="col-sm-offset-4 col-sm-4">	
+			        <button type="submit" class="btn btn-default" style="width:100%;">Submit</button>
+      			      </div>
+	    		</div>
+		</form>
+
+<p>Select to Destroy: </p>
+
+		<form class="form-horizontal" action="http://192.168.43.13/cgi-bin/cluster1.py">
+			<div class="col-sm-12">
+       				<div class="checkbox">
+          				<label><input type="checkbox" name="nn1" value="nn"> Namenode</label>
+        			</div>
+				<div class="checkbox">
+          				<label><input type="checkbox" name="dn11" value="dn1"> Datanode-1</label>
+        			</div>
+				<div class="checkbox">
+          				<label><input type="checkbox" name="dn22" value="dn2"> Datanode-2</label>
+        			</div>
+				<div class="checkbox">
+          				<label><input type="checkbox" name="dn33" value="dn3"> Datanode-3</label>
+        			</div>
+      			</div>
+			<div class="form-group">        
+			      <div class="col-sm-offset-4 col-sm-4">	
+			        <button type="submit" class="btn btn-default" style="width:100%;">Submit</button>
+      			      </div>
+	    		</div>
+		</form>
+
+	</div>
+</fieldset>
+</div>
+ 
+</div>
+</body>
+
+</html>
